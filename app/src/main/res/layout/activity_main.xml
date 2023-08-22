@@ -8,7 +8,7 @@
     tools:context=".MainActivity">
 
     <EditText
-        android:id="@+id/editTextText2"
+        android:id="@+id/age_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/margin"
@@ -20,16 +20,15 @@
         android:text="@string/app_age"
         android:textColor="@color/eggplant"
         android:textSize="@dimen/font"
-        app:layout_constraintBottom_toTopOf="@+id/editTextText3"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText" />
+        app:layout_constraintTop_toBottomOf="@+id/name_text" />
 
     <EditText
-        android:id="@+id/editTextText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/name_text"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
         android:layout_margin="@dimen/margin"
         android:layout_marginTop="116dp"
         android:background="@color/tea_green"
@@ -45,10 +44,11 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextText3"
+        android:id="@+id/hobby_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/margin"
+        android:layout_marginTop="20dp"
         android:background="@color/tea_green"
         android:ems="10"
         android:inputType="text"
@@ -57,34 +57,34 @@
         android:textColor="@color/eggplant"
         android:textSize="@dimen/font"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="138dp" />
+        app:layout_constraintTop_toBottomOf="@+id/age_text" />
 
     <Button
         android:id="@+id/button"
+        style="@android:style/Widget.Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/margin"
-        android:background="@color/eggplant"
         android:backgroundTint="@color/eggplant"
         android:padding="@dimen/padding"
         android:text="Continue"
         android:textColor="@color/robin_egg_blue"
-        android:textColorLink="@color/black"
         android:textSize="@dimen/font"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.342"
-        tools:layout_editor_absoluteX="154dp" />
+        app:layout_constraintVertical_bias="0.345" />
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_height="400dp"
+        android:layout_height="420dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/goofy_ah_cat"
-        tools:layout_editor_absoluteY="299dp" />
+        app:srcCompat="@drawable/goofy_ah_cat" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
