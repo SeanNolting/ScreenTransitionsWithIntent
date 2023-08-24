@@ -50,7 +50,13 @@ public class MainActivity extends AppCompatActivity {
         //coming from this screen going to ShowInfoActivity
         Intent intent = new Intent(this, ShowInfoActivity.class);
 
-        intent.putExtra("FULL TEXT", fullText);
+        //optional you don't have to put anything in the intent
+       //intent.putExtra("FULLTEXT", fullText);
+
+        //Adding a new intent which is the name
+        intent.putExtra("NAMETEXT", name );
+        intent.putExtra("AGETEXT", age);
+        intent.putExtra("HOBBYTEXT", hobby);
 
         //launch a new screen
         startActivity(intent);

@@ -3,4 +3,5 @@
     <dimen name="padding">10dp</dimen>
     <dimen name="margin">15dp</dimen>
     <dimen name="font">20sp</dimen>
+    <dimen name="displayText">50sp</dimen>
 </resources>

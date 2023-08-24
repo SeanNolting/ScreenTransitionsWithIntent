@@ -4,6 +4,50 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/deep_slate_grey"
     tools:context=".ShowInfoActivity">
 
+    <TextView
+        android:id="@+id/nameTextView"
+        android:layout_width="328dp"
+        android:layout_height="154dp"
+        android:gravity="center"
+        android:text="Name: TextView"
+        android:textColor="@color/naples_yellow"
+        android:textSize="@dimen/displayText"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.071" />
+
+    <TextView
+        android:id="@+id/ageTextView"
+        android:layout_width="321dp"
+        android:layout_height="82dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textColor="@color/naples_yellow"
+        android:textSize="@dimen/displayText"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.375" />
+
+    <TextView
+        android:id="@+id/hobbyTextView"
+        android:layout_width="331dp"
+        android:layout_height="86dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textColor="@color/naples_yellow"
+        android:textSize="@dimen/displayText"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.55"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.665" />
 </androidx.constraintlayout.widget.ConstraintLayout>
