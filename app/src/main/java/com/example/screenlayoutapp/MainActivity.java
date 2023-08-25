@@ -58,6 +58,9 @@ public class MainActivity extends AppCompatActivity {
         intent.putExtra("AGETEXT", age);
         intent.putExtra("HOBBYTEXT", hobby);
 
+        //Adding a method which disables the button to continue until there is text in every box
+
+
         //launch a new screen
         startActivity(intent);
     }
