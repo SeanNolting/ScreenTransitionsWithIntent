@@ -21,14 +21,15 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.071" />
 
-    <TextView
-        android:id="@+id/ageTextView"
+    <EditText
+        android:id="@+id/lastName"
         android:layout_width="321dp"
         android:layout_height="82dp"
         android:gravity="center"
-        android:text="TextView"
+        android:hint="Last Name"
         android:textColor="@color/naples_yellow"
         android:textSize="@dimen/displayText"
+        android:inputType="text"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.488"
@@ -36,18 +37,34 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.375" />
 
-    <TextView
-        android:id="@+id/hobbyTextView"
-        android:layout_width="331dp"
-        android:layout_height="86dp"
-        android:gravity="center"
-        android:text="TextView"
+    <Button
+        android:id="@+id/button_slide_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/eggplant"
+        android:onClick="slideLeft"
+        android:text="Slide Left"
         android:textColor="@color/naples_yellow"
-        android:textSize="@dimen/displayText"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.55"
+        app:layout_constraintHorizontal_bias="0.119"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.665" />
+        app:layout_constraintVertical_bias="0.845" />
+    <Button
+        android:id="@+id/fade_out"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/eggplant"
+        android:onClick="fadeOut"
+        android:text="Fade Out"
+        android:textColor="@color/naples_yellow"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.784"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.845" />
 </androidx.constraintlayout.widget.ConstraintLayout>

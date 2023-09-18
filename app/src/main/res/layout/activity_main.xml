@@ -9,90 +9,66 @@
 
     <EditText
         android:id="@+id/name_text"
-        android:layout_width="wrap_content"
-        android:layout_height="40dp"
+        android:layout_width="302dp"
+        android:layout_height="137dp"
         android:layout_margin="@dimen/margin"
-        android:layout_marginTop="16dp"
         android:background="@color/reseda_green"
         android:ems="10"
-        android:gravity="center_horizontal"
+        android:gravity="center"
         android:hint="@string/app_name"
-        android:inputType="text"
         android:padding="@dimen/padding"
         android:textColor="@color/light_coral"
-        android:textSize="@dimen/font"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/age_text"
-        android:layout_width="wrap_content"
-        android:layout_height="40dp"
-        android:layout_margin="@dimen/margin"
-        android:layout_marginTop="16dp"
-        android:background="@color/reseda_green"
-        android:ems="10"
-        android:gravity="center_horizontal"
-        android:hint="@string/app_age"
-        android:inputType="number"
-        android:padding="@dimen/padding"
-        android:textColor="@color/light_coral"
-        android:textSize="@dimen/font"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/name_text" />
-
-    <EditText
-        android:id="@+id/hobby_text"
-        android:layout_width="wrap_content"
-        android:layout_height="40dp"
-        android:layout_margin="@dimen/margin"
-        android:layout_marginTop="16dp"
-        android:background="@color/reseda_green"
-        android:ems="10"
-        android:gravity="center_horizontal"
-        android:hint="@string/app_hobby"
-        android:inputType="text"
-        android:padding="@dimen/padding"
-        android:textColor="@color/light_coral"
-        android:textSize="@dimen/font"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/age_text" />
-
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="wrap_content"
-        android:layout_height="290dp"
-        android:adjustViewBounds="true"
+        android:textSize="@dimen/displayText"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.477"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.53"
-        app:srcCompat="@drawable/goofy_ah_cat" />
-
+        app:layout_constraintVertical_bias="0.101" />
     <Button
-        android:id="@+id/button_continue"
+        android:id="@+id/button_slide_right"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/reseda_green"
-        android:text="Continue"
+        android:onClick="slideRight"
+        android:text="Slide Right"
         android:textColor="@color/light_coral"
         android:textSize="24sp"
-        android:onClick="switchScreens"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.106"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.905" />
-
+        app:layout_constraintVertical_bias="0.612" />
+    <Button
+        android:id="@+id/fade_in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fade in"
+        android:onClick="fadeIn"
+        android:backgroundTint="@color/reseda_green"
+        android:textColor="@color/light_coral"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.796"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.614" />
+    <TextView
+        android:id="@+id/lastNameTxtV"
+        android:layout_width="301dp"
+        android:layout_height="138dp"
+        android:background="@color/reseda_green"
+        android:gravity="center"
+        android:hint="Last Name"
+        android:textColor="@color/light_coral"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.376" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
