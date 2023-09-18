@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
         TextView infoTV = findViewById(R.id.lastNameTxtV);
         infoTV.setText(receivedlastNameText);
     }
+    //Slide Transitions https://www.youtube.com/watch?v=fYEietsVFvA
     public void slideRight(View v)
     {
         EditText nameET = findViewById(R.id.name_text);
@@ -32,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
         overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out);
     }
+    //Fade Transitions https://www.youtube.com/watch?v=S6b9KjdPFtg
     public void fadeIn(View v)
     {
         EditText nameET = findViewById(R.id.name_text);
